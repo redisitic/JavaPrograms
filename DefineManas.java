@@ -5,7 +5,7 @@ class DefineManas {
         System.out.print("Enter the Person's name: ");
         String name = sc.nextLine();
         sc.close();
-        if(name == ""){
+        if(name == "" || name == " " || name == null){
             name = "Manas";
         }
         System.out.println(" "); 
