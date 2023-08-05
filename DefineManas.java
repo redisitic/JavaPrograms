@@ -1,7 +1,8 @@
 import java.util.*;
 import java.io.File;
 
-class DefineManas {
+public class DefineManas {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Scanner bad = null;
