@@ -5,6 +5,9 @@ class DefineManas {
         System.out.print("Enter the Person's name: ");
         String name = sc.nextLine();
         sc.close();
+        if(name == ""){
+            name = "Manas";
+        }
         System.out.println(" "); 
         System.out.print(name + " is ");
         String[] strAr = {"kutta", "bhenchod", "mawali", "bhosdike", "madarchod", "baap ki chut", "saala", "bhen ka loda", "chutiya"};
