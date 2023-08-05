@@ -28,8 +28,6 @@ public class ManasGUI extends JFrame implements ActionListener{
         outLabel = new JLabel(" ");
         outLabel.setPreferredSize(new Dimension(700, 40));
         outLabel.setFont(new Font("Segoe UI", Font.PLAIN, 15));
-        outLabel.setVerticalAlignment(SwingConstants.CENTER);
-        outLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
         this.add(label);
         this.add(inputText);
@@ -44,11 +42,7 @@ public class ManasGUI extends JFrame implements ActionListener{
         if(e.getSource() == button){
             String name = inputText.getText();
             button.setEnabled(false);
-            if(name == "" || name == " " || name == null){
-                name = "Manas";
-            }
-            outLabel.setText(name + " is kutta, bhenchod, mawali, bhosdike, madarchod, baap ki chut, saala, bhen ka loda and chutiya.");
-
+            outLabel.setText(name + " is kutta, bhenchod, mawali, bhosdike, madarchod, baap ki chut, saala, bhen ka loda and chutiya.");      
         }
 
     }
