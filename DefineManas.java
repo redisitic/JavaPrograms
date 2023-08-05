@@ -1,5 +1,5 @@
 import java.util.*;
-class DefineManas {
+public class DefineManas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the Person's name: ");
