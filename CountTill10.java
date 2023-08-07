@@ -1,9 +1,5 @@
 import javax.swing.*;
-
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.awt.event.*;
 
 public class CountTill10 extends JFrame implements ActionListener{
@@ -28,12 +24,12 @@ public class CountTill10 extends JFrame implements ActionListener{
         tf.setBackground(new Color(0,0,0));
         tf.setForeground(new Color(255, 0, 0));
         tf.setFont(new Font("Segoe UI", Font.PLAIN, 20));
-        tf.setPreferredSize(new Dimension(240, 20));
-
+        
         JLabel empty = new JLabel("");
 
         outlabel = new JLabel("");
         outlabel.setFont(new Font("Segoe UI", Font.PLAIN, 20));
+        outlabel.setPreferredSize(new Dimension(240, 20));
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Count to 10");
