@@ -1,4 +1,4 @@
-import javax.swing.*;
+    import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -58,7 +58,8 @@ public class CountTill10 extends JFrame implements ActionListener{
                     tf.setForeground(new Color(0, 255, 0));
                 }
             } else{
-                tf.setText("10");
+                count++;
+                tf.setText(""+count);
                 button.setEnabled(false);
                 outlabel.setText("Congratulations! You won.");
             }
