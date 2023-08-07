@@ -1,4 +1,4 @@
-    import javax.swing.*;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -10,26 +10,29 @@ public class CountTill10 extends JFrame implements ActionListener{
     JLabel outlabel;
     int count = 0;
     public CountTill10(){
+
+        Font fontNormal = new Font("Segoe UI", Font.PLAIN, 20);
+        Font fontBold = new Font("Segoe UI", Font.BOLD, 20);
         layout = new GridLayout(2,3, 10, 10);
 
         button = new JButton("Count");
         button.addActionListener(this);
-        button.setFont(new Font("Segoe UI", Font.PLAIN, 20));
+        button.setFont(fontNormal);
         button.setBackground(new Color(255, 255, 64));
 
         label = new JLabel("Total = ");
-        label.setFont(new Font("Segoe UI", Font.BOLD, 20));
+        label.setFont(fontBold);
 
         tf = new JTextField(""+count);
         tf.setEditable(false);
         tf.setBackground(new Color(0,0,0));
         tf.setForeground(new Color(255, 0, 0));
-        tf.setFont(new Font("Segoe UI", Font.PLAIN, 20));
+        tf.setFont(fontNormal);
         
         JLabel empty = new JLabel("");
 
         outlabel = new JLabel("");
-        outlabel.setFont(new Font("Segoe UI", Font.BOLD, 20));
+        outlabel.setFont(fontNormal);
         outlabel.setForeground(new Color(255, 0, 0));
         outlabel.setPreferredSize(new Dimension(260, 20));
 
