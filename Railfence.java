@@ -50,28 +50,29 @@ public class Railfence extends JFrame implements ActionListener{
         this.pack();
         this.setVisible(true);
     }
-    public static String encrypt(String text, int key){
-        char[][] rail = new char[key][text.length()];
-        for (int i = 0; i < key; i++)
+    public static String encrypt(String str, int n){
+        char[][] rail = new char[n][str.length()];
+        for (int i = 0; i < n; i++)
             Arrays.fill(rail[i], '\n');
         boolean dirDown = false;
-        int row = 0, col = 0;
-        for (int i = 0; i < text.length(); i++) {
-            if (row == 0 || row == key - 1)
+        int row = 0;
+        int col = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (row == 0 || row == (n - 1))
                 dirDown = !dirDown;
-            rail[row][col++] = text.charAt(i);
+            rail[row][col++] = str.charAt(i);
             if (dirDown)
                 row++;
             else
                 row--;
         }
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < key; i++)
-            for (int j = 0; j < text.length(); j++)
+        StringBuilder encryptedStr = new StringBuilder();
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < str.length(); j++)
                 if (rail[i][j] != '\n')
-                    result.append(rail[i][j]);
+                    encryptedStr.append(rail[i][j]);
  
-        return result.toString();
+        return encryptedStr.toString();
     }
 
     public void actionPerformed(ActionEvent e){
