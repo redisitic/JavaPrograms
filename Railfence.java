@@ -84,15 +84,15 @@ public class Railfence extends JFrame implements ActionListener{
         char[][] rail = new char[n][m];
         for (int i = 0; i < n; i++)
             Arrays.fill(rail[i], '\n');
-        boolean dirDown = true; 
+        boolean direction = true; 
         int row = 0, col = 0;
         for (int i = 0; i < m; i++) {
             if (row == 0)
-                dirDown = true;
+                direction = true;
             if (row == n - 1)
-                dirDown = false;
+                direction = false;
             rail[row][col++] = '*';
-            if (dirDown)
+            if (direction)
                 row++;
             else
                 row--;
@@ -108,12 +108,12 @@ public class Railfence extends JFrame implements ActionListener{
         col = 0;
         for (int i = 0; i < m; i++) {
             if (row == 0)
-                dirDown = true;
+                direction = true;
             if (row == n - 1)
-                dirDown = false;
+                direction = false;
             if (rail[row][col] != '*')
                 result.append(rail[row][col++]);
-            if (dirDown)
+            if (direction)
                 row++;
             else
                 row--;
