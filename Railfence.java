@@ -100,8 +100,7 @@ public class Railfence extends JFrame implements ActionListener{
         int index = 0;
         for (int i = 0; i <n; i++)
             for (int j = 0; j < m; j++)
-                if (rail[i][j] == '*'
-                    && index < m)
+                if (rail[i][j] == '*' && index < m)
                     rail[i][j] =str.charAt(index++); 
         StringBuilder result = new StringBuilder(); 
         row = 0;
