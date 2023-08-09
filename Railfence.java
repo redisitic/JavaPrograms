@@ -136,6 +136,6 @@ public class Railfence extends JFrame implements ActionListener{
         }
     }
     public static void main(String args[]){
-        Railfence rl = new Railfence();
+        new Railfence();
     }
 }
