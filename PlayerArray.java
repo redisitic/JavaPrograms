@@ -48,7 +48,7 @@ public class PlayerArray{
     });
     for(int i = 0; i < rows; i++){
         System.out.println("");
-        System.out.print("Average score of Player "+ (PlayerLeaderboard[i][1]) + "'s Score: " + PlayerLeaderboard[i][0]);
+        System.out.println("Average score of Player "+ (PlayerLeaderboard[i][1]) + "'s Score: " + PlayerLeaderboard[i][0]);
     }
     sn.close();
     }
