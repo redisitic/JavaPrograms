@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class StudentArray{
     public static void main(String args[]){
         Scanner sn = new Scanner(System.in);
