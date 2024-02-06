@@ -3,5 +3,20 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "type": "java",
+            "name": "InsSort",
+            "request": "launch",
+            "mainClass": "InsSort",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
+            "name": "SelecSort",
+            "request": "launch",
+            "mainClass": "SelecSort",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        }
+    ]
 }
