@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GFG",
+            "request": "launch",
+            "mainClass": "GFG",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
+            "name": "LCSDynamicProgramming",
+            "request": "launch",
+            "mainClass": "LCSDynamicProgramming",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
+            "name": "LCSCustomQueue",
+            "request": "launch",
+            "mainClass": "LCSCustomQueue",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
             "name": "InsSort",
             "request": "launch",
             "mainClass": "InsSort",
