@@ -31,9 +31,19 @@ public class LCS {
         return matNum;
     }
     public static void main(String[] args) {
-        String s1 = "helloiamstupid";
-        String s2 = "iamnothello";
-        int lcsLength = lcs(s1, s2);
-        System.out.println(lcsLength); 
+        long avgtime=0;
+        for(int i = 0; i < 1; i++){
+            String s1 = "qhvtntzofziwrsxgfruozylrzzbrpcuf";
+            String s2 = "joihojfhntqmupaqchotufcwvijhkqbm";
+            long startTime = System.nanoTime();
+            @SuppressWarnings("unused")
+            int lcsLength = lcs(s1, s2);
+            long stopTime = System.nanoTime();
+            System.out.println(lcsLength);
+            avgtime += (stopTime - startTime);
+            //System.out.println((stopTime - startTime));  
+        }
+        float avgF = avgtime;
+        System.out.println(avgF/1000000);
     }
 }

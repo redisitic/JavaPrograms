@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "LongestCommonSubsequence",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
+            "name": "LCSDP",
+            "request": "launch",
+            "mainClass": "LCSDP",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
+            "name": "LongestCommonSubstring",
+            "request": "launch",
+            "mainClass": "LongestCommonSubstring",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
+            "name": "ShortString",
+            "request": "launch",
+            "mainClass": "ShortString",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
+            "name": "LCSDivideAndConquer",
+            "request": "launch",
+            "mainClass": "LCSDivideAndConquer",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
             "name": "LCS",
             "request": "launch",
             "mainClass": "LCS",
