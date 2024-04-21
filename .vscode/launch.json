@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LCS",
+            "request": "launch",
+            "mainClass": "LCS",
+            "projectName": "JavaPrograms_ecaaf5c1"
+        },
+        {
+            "type": "java",
             "name": "GFG",
             "request": "launch",
             "mainClass": "GFG",
