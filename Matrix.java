@@ -43,6 +43,7 @@ public class Matrix {
     for(int i=0; i<N; i++){
         arr[i]=sc.nextInt();
     }
+    sc.close();
     // int arr[] = { 1, 2, 3, 4 };
     // int N= arr.length;
  

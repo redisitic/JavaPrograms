@@ -8,6 +8,7 @@ public class MatrixChain {
 
         int[] rows = new int[n];
         int[] columns = new int[n];
+        s.close();
 
         for (int i = 0; i < n; i++) {
             System.out.print("Enter the number of rows for matrix " + (i + 1) + ": ");
