@@ -54,6 +54,9 @@ public class Railfence extends JFrame implements ActionListener{
         this.setVisible(true);
     }
     public static String encrypt(String str, int n){
+        if (n == 1) {
+            return str;
+        }
         int m = str.length();
         char[][] rail = new char[n][m];
         for (int i = 0; i < n; i++)
@@ -80,6 +83,9 @@ public class Railfence extends JFrame implements ActionListener{
     }
 
     public static String decrypt(String str, int n){
+        if (n == 1) {
+            return str;
+        }
         int m = str.length();
         char[][] rail = new char[n][m];
         for (int i = 0; i < n; i++)
